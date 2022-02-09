@@ -1,10 +1,9 @@
-const nota = 100;
+const a = 0;
 
-if (nota >= 80){
-    console.log("Parabéns, você foi aprovada(o)!");
-} else if (nota < 80 && nota >= 60){
-    console.log("Você está na nossa lista de espera");
+if(a > 0){
+    console.log("Esse número é positivo.");
+} else if(a < 0){
+    console.log("Esse número é negativo.")
 } else{
-    console.log("Você foi reprovada(o)");
+    console.log("Esse é o número zero ;)")
 }
-    

@@ -1,16 +1,15 @@
-const currentHour = 12;
-let message = '';
+const angulo1 = 60;
+const angulo2 = 60;
+const angulo3 = 60;
 
-if (currentHour >= 22){
-    message = "Não deveríamos comer nada, é hora de dormir";
-} else if (currentHour > 18 && currentHour < 22){
-    message = "Rango da noite, vamos jantar :D";
-} else if (currentHour > 14 && currentHour <= 18){
-    message = "Vamos fazer um bolo pro café da tarde?";
-} else if (currentHour >11 && currentHour <= 14){
-    message = "Hora do almoço!!!";
-} else{
-    message = "Hmmm, cheiro de café recém passado";
+if(angulo1 === 60 && angulo2 === 60 && angulo3 === 60){
+    console.log("Esse é um triângulo.")
+}   else if(angulo1 < 0){
+    console.log("Ângulo negativo não é válido.")
+}   else if(angulo2 < 0){
+    console.log("Ângulo negativo não é válido.")
+}   else if(angulo3 < 0){
+    console.log("Ângulo negativo não é válido.")
+}   else{
+    console.log("Não sei que forma é essa =/")
 }
-
-console.log(message);

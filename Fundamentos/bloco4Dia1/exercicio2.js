@@ -1,13 +1,10 @@
-let patientId = 50;
-let isEnrolled = true;
-const patientInfo = {
-  firstName: 'Ana',
-  lastName: 'Santos',
-};
-const patientEmail = 'ana@email.com';
+const a = 45;
+const b = 45;
 
-console.log(typeof patientId)
-console.log(typeof isEnrolled)
-console.log(typeof patientInfo)
-console.log(typeof patientEmail)
-console.log(typeof patientAge)
+if(a > b){
+    console.log(a + " é maior que " + b + ".");
+} else if (a < b){
+    console.log(b + " é maior que " + a + ".");
+} else{
+    console.log("Esses números são iguais.")
+}
