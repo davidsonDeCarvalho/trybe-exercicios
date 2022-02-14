@@ -72,12 +72,13 @@ child.parentElement.parentElement.nextElementSibling;
 
 // 1 Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
 
-let elementRemove = document.getElementById("pai");
+let elementRemove = document.getElementById("pai").childNodes;
 
-for (let index = elementRemove.childNodes.length - 1; index >= 0; index -= 1) {
-    let elementRemoved = elementRemove.childNodes[index];
-    if (elementRemoved.id !== "elementoOndeVoceEsta") {
-        elementRemoved.remove();
+for (let index = elementRemove.length -1; index >=0; index -= 1) {
+    let element = elementRemove[index];
+
+    if (element.id !== "elementoOndeVoceEsta") {
+        element.remove();
     }
 }
 
